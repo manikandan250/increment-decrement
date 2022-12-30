@@ -4,12 +4,16 @@ incre.addEventListener("click",myFunction);
 decre.addEventListener("click",myFunctionn);
 
 function myFunction(){
-	let add=document.getElementById("dom").value;
+	var add=document.getElementById("dom").value;
 	add++;
 	document.getElementById("dom").value=add;
 }
 function myFunctionn(){
-	let add=document.getElementById("dom").value;
-	add--;
+	var add=document.getElementById("dom").value;
+	
+	if(add>0){
+		add--;
 	document.getElementById("dom").value=add;
+	
+	}
 }
